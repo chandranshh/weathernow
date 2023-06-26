@@ -1,3 +1,4 @@
+//test data to make the frontend
 export const forecast = {
   city_name: "Allahabad",
   country_code: "IN",
