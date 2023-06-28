@@ -10,8 +10,8 @@ function Sidebar() {
   return (
     <div className="w-[20%] h-screen border-r border-gray-20 border-opacity-50">
       <div className="flex flex-col">
-        <div className="flex items-center justify-center gap-3 p-6 pb-12">
-          <Image src={Logo} className="h-[30px] w-[30px]" alt="logo.png" />
+        <div className="flex items-center justify-center gap-6 p-6 pb-12 mt-8">
+          <Image src={Logo} className="h-[50px] w-[50px]" alt="logo.png" />
           <div className="font-extrabold text-2xl">WeatherNow+</div>
         </div>
         <div className="flex items-center justify-center text-lg">

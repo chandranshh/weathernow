@@ -1,5 +1,5 @@
 function Rightbar() {
-  return <div className="w-[20%] bg-blue-200 h-screen">Rightbar</div>;
+  return <div className="w-[20%]">Rightbar</div>;
 }
 
 export default Rightbar;
