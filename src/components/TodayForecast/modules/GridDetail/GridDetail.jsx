@@ -6,7 +6,7 @@ function GridDetail({ today }) {
       <div className="grid grid-cols-2 gap-8">
         <div className="flex justify-between p-6 bg-[#98c5ff5f] rounded-2xl">
           <div className="flex flex-col gap-4">
-            <div className="text-3xl font-bold text-black">Wind Direction</div>
+            <div className="text-3xl font-md text-black">Wind Direction</div>
             <div className="text-md font-md text-gray-600">
               Todays wind direction
             </div>
@@ -17,7 +17,7 @@ function GridDetail({ today }) {
         </div>
         <div className="flex justify-between p-6 bg-[#98c5ff5f] rounded-2xl">
           <div className="flex flex-col gap-4">
-            <div className="text-3xl font-bold text-black">Wind Speed</div>
+            <div className="text-3xl font-md text-black">Wind Speed</div>
             <div className="text-md font-md text-gray-600">
               Todays wind speed
             </div>
@@ -28,7 +28,7 @@ function GridDetail({ today }) {
         </div>
         <div className="flex justify-between p-6 bg-[#98c5ff5f] rounded-2xl">
           <div className="flex flex-col gap-4">
-            <div className="text-3xl font-bold text-black">UV Index</div>
+            <div className="text-3xl font-md text-black">UV Index</div>
             <div className="text-md font-md text-gray-600">Todays UV Index</div>
           </div>
           <div className="self-center text-3xl font-md text-gray-700">
@@ -38,7 +38,7 @@ function GridDetail({ today }) {
 
         <div className="flex justify-between p-6 bg-[#98c5ff5f] rounded-2xl">
           <div className="flex flex-col gap-4">
-            <div className="text-3xl font-bold text-black">Pressure</div>
+            <div className="text-3xl font-md text-black">Pressure</div>
             <div className="text-md font-md text-gray-600">Todays pressure</div>
           </div>
           <div className="self-center text-3xl font-md text-gray-700">

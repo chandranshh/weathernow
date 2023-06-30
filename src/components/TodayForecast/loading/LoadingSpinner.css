@@ -1,0 +1,35 @@
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .spinner-dot1,
+  .spinner-dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    animation: spinner 2s infinite ease-in-out;
+  }
+  
+  .spinner-dot2 {
+    animation-delay: -1s;
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  

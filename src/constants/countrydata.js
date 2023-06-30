@@ -211,6 +211,7 @@ export const countryData = [
   { code: "UA", name: "Ukraine" },
   { code: "UG", name: "Uganda" },
   { code: "US", name: "United States" },
+  { code: "UK", name: "United Kingdom" },
   { code: "UY", name: "Uruguay" },
   { code: "UZ", name: "Uzbekistan" },
   { code: "VA", name: "Vatican City" },

@@ -8,44 +8,55 @@ import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
 import Image from "next/image";
 
 function BigDetail({ today, graphTemp }) {
-  const data = today.data[0];
+  const data = today?.data[0];
 
   //chart generation using chart.js
   const graphRef = useRef(null);
   useEffect(() => {
     const ctx = graphRef.current.getContext("2d");
-    new Chart(ctx, {
-      type: "line",
-      data: {
-        labels: ["Morning", "Afternoon", "Evening", "Night"],
-        datasets: [
-          {
-            label: "Temperature (°C)",
-            data: [
-              graphTemp.morningTemperature,
-              graphTemp.afternoonTemperature,
-              graphTemp.eveningTemperature,
-              graphTemp.nightTemperature,
-            ],
-            backgroundColor: "rgba(0, 123, 255, 0.2)",
-            borderColor: "#375b9e",
-            borderWidth: 2,
-            pointBackgroundColor: "#375b9e",
-            pointRadius: 4,
-            pointHoverRadius: 6,
-            cubicInterpolationMode: "monotone",
-          },
-        ],
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 40,
+    let chartInstance;
+
+    if (graphRef.current) {
+      chartInstance = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Morning", "Afternoon", "Evening", "Night"],
+          datasets: [
+            {
+              label: "Temperature (°C)",
+              data: [
+                graphTemp.morningTemperature,
+                graphTemp.afternoonTemperature,
+                graphTemp.eveningTemperature,
+                graphTemp.nightTemperature,
+              ],
+              backgroundColor: "rgba(0, 123, 255, 0.2)",
+              borderColor: "#375b9e",
+              borderWidth: 2,
+              pointBackgroundColor: "#375b9e",
+              pointRadius: 4,
+              pointHoverRadius: 6,
+              cubicInterpolationMode: "monotone",
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 40,
+            },
           },
         },
-      },
-    });
+      });
+    }
+
+    return () => {
+      // Destroy the chart instance before unmounting the component
+      if (chartInstance) {
+        chartInstance.destroy();
+      }
+    };
   }, [graphTemp]);
 
   return (
@@ -69,7 +80,7 @@ function BigDetail({ today, graphTemp }) {
                   &#xb0;
                 </span>
               </div>
-              <div className="flex justify-center items-center gap-4 text-lg font-bold mt-6 bg-slate-100 px-3 rounded-full shadow-lg">
+              <div className="flex justify-center items-center gap-4 text-lg font-bold mt-6 bg-[#eaecf049] px-3 rounded-full shadow-sm">
                 <span className="text-center p-2">
                   {data.weather.description}
                 </span>

@@ -24,17 +24,20 @@ function Searchbar({ setFullData }) {
 
   return (
     <div>
-      <div className="h-16 flex flex-row items-center justify-center gap-4 p-4 border border-gray-200 rounded-full shadow-lg">
+      <div className="h-16 w-[1000px] flex flex-row items-center justify-center gap-4 p-4 border border-gray-200 rounded-full shadow-lg">
         <LocationSearchingIcon />
         <input
-          className="w-[70%] p-2"
+          className="w-[70%] p-2 text-lg "
           type="text"
           name="search"
           value={locationInput}
           onChange={handleLocationChange}
-          placeholder="Enter city name or zipcode"
+          placeholder="Enter city name or zip code"
         />
-        <select className="w-[20%] p-2 bg-white" onChange={handleCountryChange}>
+        <select
+          className="w-[20%] p-2 bg-white text-lg"
+          onChange={handleCountryChange}
+        >
           <option value="">Select a country</option>
           {countryData.map((country) => (
             <option key={country.code} value={country.code}>
@@ -42,7 +45,9 @@ function Searchbar({ setFullData }) {
             </option>
           ))}
         </select>
-        <button onClick={handleSearchData}>Search</button>
+        <button className="text-lg" onClick={handleSearchData}>
+          Search
+        </button>
       </div>
     </div>
   );
