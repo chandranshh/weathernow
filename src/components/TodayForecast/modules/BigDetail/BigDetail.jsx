@@ -80,7 +80,7 @@ function BigDetail({ today, graphTemp }) {
                   &#xb0;
                 </span>
               </div>
-              <div className="flex justify-center items-center gap-4 text-lg font-bold mt-6 bg-[#eaecf049] px-3 rounded-full shadow-sm">
+              <div className="flex justify-center items-center gap-4 text-lg font-bold mt-6 bg-white px-3 rounded-full shadow-sm">
                 <span className="text-center p-2">
                   {data.weather.description}
                 </span>
