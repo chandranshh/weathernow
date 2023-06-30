@@ -23,7 +23,7 @@ function GridDetail({ today }) {
             </div>
           </div>
           <div className="self-center text-3xl font-md text-gray-700">
-            {data.wind_spd} m/s
+            {data.wind_spd.toFixed(2)} m/s
           </div>
         </div>
         <div className="flex justify-between p-6 bg-[#98c5ff5f] rounded-2xl">
@@ -32,7 +32,7 @@ function GridDetail({ today }) {
             <div className="text-md font-md text-gray-600">Todays UV Index</div>
           </div>
           <div className="self-center text-3xl font-md text-gray-700">
-            {data.uv}
+            {data.uv.toFixed(2)}
           </div>
         </div>
 
@@ -42,7 +42,7 @@ function GridDetail({ today }) {
             <div className="text-md font-md text-gray-600">Todays pressure</div>
           </div>
           <div className="self-center text-3xl font-md text-gray-700">
-            {data.pres}
+            {data.pres.toFixed(2)}
           </div>
         </div>
       </div>

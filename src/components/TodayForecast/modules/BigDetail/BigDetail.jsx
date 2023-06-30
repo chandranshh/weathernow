@@ -95,15 +95,19 @@ function BigDetail({ today, graphTemp }) {
             <div className="flex flex-row justify-around items-center mt-4 py-2">
               <div className="flex gap-2">
                 <WindPowerOutlinedIcon />
-                <div className="text-md font-bold">{data.wind_spd}m/s</div>
+                <div className="text-md font-bold">
+                  {data.wind_spd.toFixed(2)} m/s
+                </div>
               </div>
               <div className="flex gap-2">
                 <WaterDropOutlinedIcon />
-                <div className="text-md font-bold">{data.rh}%</div>
+                <div className="text-md font-bold">{data.rhtoFixed(2)}%</div>
               </div>
               <div className="flex gap-2">
                 <CloudOutlinedIcon />
-                <div className="text-md font-bold">{data.clouds}%</div>
+                <div className="text-md font-bold">
+                  {data.clouds.toFixed(2)}%
+                </div>
               </div>
             </div>
           </div>
