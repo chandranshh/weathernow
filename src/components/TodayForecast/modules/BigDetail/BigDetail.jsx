@@ -101,7 +101,7 @@ function BigDetail({ today, graphTemp }) {
               </div>
               <div className="flex gap-2">
                 <WaterDropOutlinedIcon />
-                <div className="text-md font-bold">{data.rhtoFixed(2)}%</div>
+                <div className="text-md font-bold">{data.rh.toFixed(2)}%</div>
               </div>
               <div className="flex gap-2">
                 <CloudOutlinedIcon />
