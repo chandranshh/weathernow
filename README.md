@@ -16,22 +16,41 @@ This is a simple weather application built using Next.js and the Weatherbit API.
 
 ## Technologies Used
 
-- Next.js 
-- Weatherbit API 
+- Next.js
+- Weatherbit API
 - TailwindCSS, Chart.js (for chart genereation)
 
-## Installation
+## Local Installation
+
+-If you want to run it with the zip without cloning for GitHub, you can run the development by
+a.Installing the packages
+
+```bash
+npm install
+```
+
+b.Then runing the development server
+
+```bash
+npm run dev
+```
+
+Open http://localhost:3000 with your browser to see the project.
+
+## GitHub Installation
 
 1. Clone the repository or download the ZIP file.
 
 ```bash
 git clone https://github.com/chandranshh/weathernow
 ```
+
 2.Navigate to the project directory.
 
 ```bash
 cd weathernow
 ```
+
 3. Install the dependencies.
 
 ```bash
