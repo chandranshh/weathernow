@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Title
 
-## Getting Started
+WeatherNow+
 
-First, run the development server:
+## Description
+
+This is a simple weather application built using Next.js and the Weatherbit API. It allows users to fetch and display current weather information for a given location. The application features a responsive user interface and provides various weather details such as the current temperature, weather description, humidity, wind speed, and more. It also includes appropriate weather icons or images based on the weather condition.
+
+## Features
+
+- User-friendly interface
+- Fetches weather data from the Weatherbit API
+- Allows users to enter a location (city, zip code, etc.) and fetch corresponding weather information
+- Displays current temperature, weather description, humidity, wind speed, and other relevant weather information
+- Uses weather icons or images to visually represent weather conditions
+- Gracefully handles errors and provides meaningful error messages
+- Additional features or enhancements that improve the application
+
+## Technologies Used
+
+- Next.js 
+- Weatherbit API 
+- TailwindCSS, Chart.js (for chart genereation)
+
+## Installation
+
+1. Clone the repository or download the ZIP file.
+
+```bash
+git clone https://github.com/chandranshh/weathernow
+```
+2.Navigate to the project directory.
+
+```bash
+cd weathernow
+```
+3. Install the dependencies.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuration
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1.Sign up for an API key on the Weatherbit website (or any other weather API you choose to use).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2.Create a .env.local file in the root directory of the project.
 
-## Learn More
+3.Add your API key to the .env.local file.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+API_KEY=YOUR_API_KEY
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1.Start the development server.
 
-## Deploy on Vercel
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.Open your browser and navigate to http://localhost:3000 to access the weather application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2.Enter a location in the provided input field and click the "Search" button to fetch and display weather information.
