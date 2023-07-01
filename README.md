@@ -35,7 +35,7 @@ cd weathernow
 3. Install the dependencies.
 
 ```bash
-npm run dev
+npm install
 ```
 
 ## Configuration
