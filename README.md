@@ -1,4 +1,5 @@
 # WeatherNow+
+Live Demo - https://weathernow-five.vercel.app/
 
 ## Description
 
@@ -22,8 +23,9 @@ This is a simple weather application built using Next.js and the Weatherbit API.
 
 ## Local Installation
 
--If you want to run it with the zip without cloning for GitHub, you can run the development by
-a.Installing the packages
+If you want to run it with the zip without cloning for GitHub, you can run the development by
+
+a.Installing the packages and then head to Configuration section to setup an API key
 
 ```bash
 npm install
