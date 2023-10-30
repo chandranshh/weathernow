@@ -68,7 +68,7 @@ npm install
 3.Add your API key to the .env.local file.
 
 ```bash
-NEXT_PUBLIC_API_KEY=YOUR_API_KEY
+NEXT_PUBLIC_API_KEY=YOUR_API_KEY 
 ```
 
 ## Usage
