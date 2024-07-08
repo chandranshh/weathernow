@@ -77,7 +77,7 @@ NEXT_PUBLIC_API_KEY=YOUR_API_KEY
 
 ```bash
 npm run dev
-```
+``` 
 
 1.Open your browser and navigate to http://localhost:3000 to access the weather application.
 
