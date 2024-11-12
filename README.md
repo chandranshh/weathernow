@@ -1,5 +1,5 @@
 # WeatherNow+
-Live Demo - https://weathernow-five.vercel.app/
+Live Demo - https://weathernow-five.vercel.app/  
 
 ## Description
 
